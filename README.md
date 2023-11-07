@@ -1,15 +1,14 @@
-# Ex.No:8 CONFIGURING ANALOG PORT TO INTEFACE AN ANALOG SENSOR AND READ THE VALUES USING SERIAL PORT
+### Ex. No. :8 CONFIGURING ANALOG PORT TO INTEFACE AN ANALOG SENSOR AND READ THE VALUES USING SERIAL PORT
+## Date: 
+###  
 
-## Aim :
+## Aim: 
+To configure ADC channel for interfacing an analog sensor and read the values on the com port 
+## Components required:
+STM 32 CUBE IDE , STM32 NUCLEO BOARD, CONNECTING CABLE, SERIAL PORT UTILITY , ANALOG SENSOR - 3.3V TYPE 
+ ## Theory 
 
-To configure ADC channel for interfacing an analog sensor and read the values on the com port.
-
-## Components required :
-
-STM 32 CUBE IDE , STM32 NUCLEO BOARD, CONNECTING CABLE, SERIAL PORT UTILITY , ANALOG SENSOR - 3.3V TYPE.
-
-## Theory :
-
+ 
 ADCs are characterized by:
 
 Resolution [bit]: the number of bits to represent a digital signal.
@@ -84,7 +83,7 @@ But since the signal frequency will remain unchanged, we will plot the dependenc
   
 
   
- ## Procedure :
+ ## Procedure:
 
 Open STM32CubeIDE Software and go to File → New… → STM32 Project.
 Click on Board Selector and select NUCLEO-G431RB in the dropdown menu.
@@ -146,10 +145,12 @@ D0 pin is a digital output
 GND pin is a Ground
 This module also includes a potentiometer that will fix the threshold value, & the value can be evaluated by the comparator-LM393. The LED will turn on/off based on the threshold value.
 
-##  Program :
 
-### DEVELOPED BY : ABRIN NISHA A
-### REG NO : 212222230005
+##  Program 
+```
+DEVELOPED BY:ADHITHIYAN.K
+REGISTER NUMBER:212222230006
+```
 ```
 #include "main.h"
 #include"stdio.h"
@@ -181,33 +182,32 @@ PUTCHAR_PROTOTYPE
   return ch;
 }
 ```
-
-
+ 
 ## Output  :
 
-### Board Settings and its connections :
+## Board Settings and its connections:
 
-![P1](https://github.com/Abrinnisha6/Ex.-No.8-CONFIGURING-ANALOG-PORT-TO-INTEFACE-AN-ANALOG-SENSOR-AND-READ-THE-VALUES-USING-SERIAL-PORT/assets/118889454/1e5f8a5f-e5be-4656-b146-cc4dfc07ee24)
+![280765181-41190bb6-f59c-46e4-bc77-c1dc84796458](https://github.com/AdhithiyanK/Ex.-No.8-CONFIGURING-ANALOG-PORT-TO-INTEFACE-AN-ANALOG-SENSOR-AND-READ-THE-VALUES-USING-SERIAL-PORT/assets/121029258/b05fcf51-e3ba-489d-a0da-aaefb607242e)
 
-![P2](https://github.com/Abrinnisha6/Ex.-No.8-CONFIGURING-ANALOG-PORT-TO-INTEFACE-AN-ANALOG-SENSOR-AND-READ-THE-VALUES-USING-SERIAL-PORT/assets/118889454/1f17f4a5-3141-46ee-82e5-9723460b15ac)
+![280765249-fae01b0d-1608-4bb0-b48e-7ab76a09f281](https://github.com/AdhithiyanK/Ex.-No.8-CONFIGURING-ANALOG-PORT-TO-INTEFACE-AN-ANALOG-SENSOR-AND-READ-THE-VALUES-USING-SERIAL-PORT/assets/121029258/c246809f-1146-4989-a8b9-e0a929dd9d48)
 
-![P3](https://github.com/Abrinnisha6/Ex.-No.8-CONFIGURING-ANALOG-PORT-TO-INTEFACE-AN-ANALOG-SENSOR-AND-READ-THE-VALUES-USING-SERIAL-PORT/assets/118889454/d92c4624-d8a6-4164-b0c5-dccee5fb008c)
+![280765290-753822bb-ba2c-400c-aad4-e7006b9eb47b](https://github.com/AdhithiyanK/Ex.-No.8-CONFIGURING-ANALOG-PORT-TO-INTEFACE-AN-ANALOG-SENSOR-AND-READ-THE-VALUES-USING-SERIAL-PORT/assets/121029258/f314ee72-a930-4b81-a49d-46c240df8a2a)
 
-### Normal ADC Value :
+## Normal ADC Value:
 
-![P4](https://github.com/Abrinnisha6/Ex.-No.8-CONFIGURING-ANALOG-PORT-TO-INTEFACE-AN-ANALOG-SENSOR-AND-READ-THE-VALUES-USING-SERIAL-PORT/assets/118889454/51903552-1f9b-475a-ae2d-9dc3be8d003f)
+![280765384-9fba960d-e6f7-49af-a03f-226cdcd04e8d](https://github.com/AdhithiyanK/Ex.-No.8-CONFIGURING-ANALOG-PORT-TO-INTEFACE-AN-ANALOG-SENSOR-AND-READ-THE-VALUES-USING-SERIAL-PORT/assets/121029258/ab9d43b5-aadc-441b-a7e4-9891d9ca3bdf)
 
-### After Light Dipping of soil-moisture-sensor-device in water :
+## After Light Dipping of soil-moisture-sensor-device in water:
 
-![P5](https://github.com/Abrinnisha6/Ex.-No.8-CONFIGURING-ANALOG-PORT-TO-INTEFACE-AN-ANALOG-SENSOR-AND-READ-THE-VALUES-USING-SERIAL-PORT/assets/118889454/3220c693-a0e5-4396-9386-9ec93a80fa07)
+![280765620-9c04df90-2880-416b-9bf1-5be565c7a83d](https://github.com/AdhithiyanK/Ex.-No.8-CONFIGURING-ANALOG-PORT-TO-INTEFACE-AN-ANALOG-SENSOR-AND-READ-THE-VALUES-USING-SERIAL-PORT/assets/121029258/f9cdfcfa-8501-41a6-a1da-865262e0d13a)
 
-![P6](https://github.com/Abrinnisha6/Ex.-No.8-CONFIGURING-ANALOG-PORT-TO-INTEFACE-AN-ANALOG-SENSOR-AND-READ-THE-VALUES-USING-SERIAL-PORT/assets/118889454/8bc1583b-9931-44a0-8294-fd5e8823f13e)
+![280765554-032d5bb8-c79e-4f2e-a34a-e1143a9c1573](https://github.com/AdhithiyanK/Ex.-No.8-CONFIGURING-ANALOG-PORT-TO-INTEFACE-AN-ANALOG-SENSOR-AND-READ-THE-VALUES-USING-SERIAL-PORT/assets/121029258/1bdd7b7f-22c7-47e5-909f-8d7077c45de5)
 
-### After Deep Dipping of soil-moisture-sensor-device in water :
+## After Deep Dipping of soil-moisture-sensor-device in water:
 
-![P7](https://github.com/Abrinnisha6/Ex.-No.8-CONFIGURING-ANALOG-PORT-TO-INTEFACE-AN-ANALOG-SENSOR-AND-READ-THE-VALUES-USING-SERIAL-PORT/assets/118889454/b532d0a4-cbf9-4395-82c3-c1691107911c)
+![280765727-fef250df-ad5c-4fcb-9559-1d5005d373f3](https://github.com/AdhithiyanK/Ex.-No.8-CONFIGURING-ANALOG-PORT-TO-INTEFACE-AN-ANALOG-SENSOR-AND-READ-THE-VALUES-USING-SERIAL-PORT/assets/121029258/de1e10f8-388d-482d-9e4b-ffbd558e872a)
 
-![P8](https://github.com/Abrinnisha6/Ex.-No.8-CONFIGURING-ANALOG-PORT-TO-INTEFACE-AN-ANALOG-SENSOR-AND-READ-THE-VALUES-USING-SERIAL-PORT/assets/118889454/a258e506-8e2d-40be-af96-45a49ed9fdc3)
+![280765784-70cb538b-a035-4bff-b536-2fb32a50c52d](https://github.com/AdhithiyanK/Ex.-No.8-CONFIGURING-ANALOG-PORT-TO-INTEFACE-AN-ANALOG-SENSOR-AND-READ-THE-VALUES-USING-SERIAL-PORT/assets/121029258/646c31fe-f864-4585-8f76-6990691dbc77)
 
 ## Result :
 
